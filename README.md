@@ -18,9 +18,35 @@ A CLI application to manage your personal book collection.
 4. As a user, I can delete a book from my collection.
 5. As a user, I can search for books by title or author.
 
-## Setup
+## Installation
 
 ```bash
-pip install -r requirements.txt
-python cli.py
+# Clone the repository
+git clone https://github.com/sydney-lab/final-project.git
+cd final-project
+
+# Install dependencies
+pip install --break-system-packages -r requirements.txt
+
+# Run the application
+python3 cli.py --help
+```
+
+## Usage
+
+```bash
+# Add a new book
+python3 cli.py add
+
+# View all books
+python3 cli.py list
+
+# Search for books
+python3 cli.py search "harry potter"
+
+# Update a book (use ID from list command)
+python3 cli.py update 1
+
+# Delete a book (use ID from list command)
+python3 cli.py delete 1
 ```
